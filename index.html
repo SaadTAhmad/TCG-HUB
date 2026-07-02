@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCG Hub | ACO, Proxies, Orders</title>
+    <meta
+      name="description"
+      content="TCG Hub is a private Discord-gated portal for ACO profiles, proxy access, and order tracking."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="TCG Hub home">
+        <span class="brand-mark">T</span>
+        <span>TCG Hub</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#aco">ACO</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Access</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="header-action" href="#login">Login</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="product-ribbon top" aria-hidden="true">
+          <div class="ribbon-track">
+            <span class="card-slab blue"></span>
+            <span class="card-slab green"></span>
+            <span class="card-slab amber"></span>
+            <span class="card-slab red"></span>
+            <span class="card-slab navy"></span>
+            <span class="card-slab blue"></span>
+            <span class="card-slab green"></span>
+            <span class="card-slab amber"></span>
+            <span class="card-slab red"></span>
+            <span class="card-slab navy"></span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Private TCG automation portal</p>
+          <h1 id="hero-title">ACO, proxies, and order tracking in one member dashboard.</h1>
+          <p class="hero-copy">
+            TCG Hub gives paid Discord members a clean portal to manage automation
+            profiles, proxy access, Walmart order monitoring, and account records.
+          </p>
+          <div class="hero-actions" id="login">
+            <a class="button button-primary" href="#">Login with Discord</a>
+            <a class="button button-secondary" href="#dashboard">View preview</a>
+          </div>
+        </div>
+
+        <div class="product-ribbon bottom" aria-hidden="true">
+          <div class="ribbon-track reverse">
+            <span class="card-slab black"></span>
+            <span class="card-slab violet"></span>
+            <span class="card-slab teal"></span>
+            <span class="card-slab orange"></span>
+            <span class="card-slab silver"></span>
+            <span class="card-slab black"></span>
+            <span class="card-slab violet"></span>
+            <span class="card-slab teal"></span>
+            <span class="card-slab orange"></span>
+            <span class="card-slab silver"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Portal highlights">
+        <span>Discord role gated</span>
+        <span>Stripe subscription ready</span>
+        <span>Proxy provider dashboard</span>
+        <span>IMAP order tracking</span>
+        <span>ACO profile vault</span>
+      </section>
+
+      <section class="dashboard-section" id="dashboard">
+        <div class="section-inner">
+          <div class="dashboard-shell">
+            <aside class="sidebar">
+              <span class="sidebar-logo">T</span>
+              <a class="active" href="#">Dashboard</a>
+              <a href="#">ACO Profiles</a>
+              <a href="#">Proxy Store</a>
+              <a href="#">Orders</a>
+              <a href="#">Billing</a>
+            </aside>
+            <div class="dashboard-main">
+              <div class="dash-top">
+                <div>
+                  <span class="mini-label">Welcome back</span>
+                  <strong>@member</strong>
+                </div>
+                <span class="status-pill">Premium active</span>
+              </div>
+              <div class="metrics">
+                <article>
+                  <span>ACO profiles</span>
+                  <strong>48</strong>
+                </article>
+                <article>
+                  <span>Proxy balance</span>
+                  <strong>2.4k</strong>
+                </article>
+                <article>
+                  <span>Tracked orders</span>
+                  <strong>186</strong>
+                </article>
+              </div>
+              <div class="workspace-grid">
+                <section class="panel large-panel">
+                  <div class="panel-head">
+                    <h2>Recent order signals</h2>
+                    <span>Live monitor</span>
+                  </div>
+                  <div class="order-row">
+                    <span class="dot green"></span>
+                    <p>Walmart confirmation parsed</p>
+                    <strong>2 min</strong>
+                  </div>
+                  <div class="order-row">
+                    <span class="dot blue"></span>
+                    <p>Tracking number detected</p>
+                    <strong>18 min</strong>
+                  </div>
+                  <div class="order-row">
+                    <span class="dot amber"></span>
+                    <p>ACO profile queued for checkout</p>
+                    <strong>1 hr</strong>
+                  </div>
+                </section>
+                <section class="panel profile-panel">
+                  <div class="panel-head">
+                    <h2>Profile health</h2>
+                  </div>
+                  <div class="health-ring">92%</div>
+                  <p>Encrypted records, role-scoped access, and account ownership checks.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="split-section" id="aco">
+        <div class="section-inner split-grid">
+          <div>
+            <p class="eyebrow">ACO system</p>
+            <h2>Give members a structured place to manage checkout profiles.</h2>
+          </div>
+          <div class="copy-stack">
+            <p>
+              Members can enter account details, shipping records, and automation
+              preferences that stay tied to their Discord identity.
+            </p>
+            <p>
+              Production storage should encrypt sensitive values and avoid raw
+              card handling. Stripe should own payments, while the portal stores
+              only the operational records needed for the dashboard.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section" id="features">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">What members get</p>
+            <h2>Built around the tools your Discord community already needs.</h2>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <span>01</span>
+              <h3>Discord gated access</h3>
+              <p>Only users inside your server with the correct paid role can enter.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Proxy buying</h3>
+              <p>Centralize proxy packages, balances, credentials, and provider status.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Email order tracking</h3>
+              <p>Monitor inboxes for Walmart order confirmations and tracking updates.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>ACO profile storage</h3>
+              <p>Keep member-specific automation records organized and easy to review.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-section">
+        <div class="section-inner">
+          <div class="section-heading center">
+            <p class="eyebrow">How it works</p>
+            <h2>Simple access flow, serious backend controls.</h2>
+          </div>
+          <div class="steps-grid">
+            <article>
+              <strong>1</strong>
+              <h3>Subscribe</h3>
+              <p>Stripe checkout starts the monthly access cycle.</p>
+            </article>
+            <article>
+              <strong>2</strong>
+              <h3>Receive role</h3>
+              <p>A Discord bot grants the paid member role automatically.</p>
+            </article>
+            <article>
+              <strong>3</strong>
+              <h3>Use portal</h3>
+              <p>The portal checks membership, then loads user-owned records.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing">
+        <div class="section-inner pricing-card">
+          <div>
+            <p class="eyebrow">Member access</p>
+            <h2>One subscription. One private operating hub.</h2>
+            <p>
+              Connect Stripe, Discord, Supabase, proxy providers, and order
+              monitoring into a single paid member experience.
+            </p>
+          </div>
+          <div class="price-box">
+            <span>Starting plan</span>
+            <strong>$XX/mo</strong>
+            <a class="button button-primary" href="#">Join with Discord</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-inner faq-grid">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions before login.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>How do members get access?</summary>
+              <p>They log in with Discord. The portal checks that they are in your server and have the paid role.</p>
+            </details>
+            <details>
+              <summary>What happens when a payment ends?</summary>
+              <p>Stripe webhooks should update the user record and tell the Discord bot to remove the paid role.</p>
+            </details>
+            <details>
+              <summary>Can this store card data?</summary>
+              <p>No raw card numbers or CVVs should be stored. Stripe should handle payment data.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>TCG Hub</span>
+      <span>Private member tools for TCG operators.</span>
+    </footer>
+  </body>
+</html>
